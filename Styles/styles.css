@@ -1,3 +1,4 @@
+/* Estilos generales */
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,13 @@
 }
 
 body{
-    color: #fffffe;
-    background-color: #232946;
+    color: #fffffe !important;
+    background-color: #232946 !important;
 }
+
+
+
+/* Secciones */
 
 .header{
     position: fixed;
@@ -21,8 +26,43 @@ body{
     justify-content: space-between;
     align-items: center;
    z-index: 100; 
+ 
+  
 }
 
+
+.section-home{
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+   
+
+}
+
+
+.section-contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+
+}
+
+
+/* NAV - HEADER */
+
+#menu-home{
+    font-size: 25px;
+    font-weight: 400;
+    display: none;
+}
 .titulo-a{
 font-size: 25px;
 color: #fffffe;
@@ -55,23 +95,12 @@ animation-delay:  calc(.2s * var(--i));
 
 }
 
-.section-home{
 
-    position: relative;
-    width: 100%;
-    height: 50vh;
-
-    display: flex;
-    justify-content: space-between;
-    border: solid red;
-    align-items: center;
-    padding: 70px 10% 0;
-
-}
+/* HOME */
 
 .home-img img{
 
-    max-width: 500px;
+    max-width: 450px;
     margin-right: -20px;
     opacity: 0;
     animation: zommim 1s ease forwards;
@@ -115,10 +144,12 @@ max-width: 900px;
 .home-content h1 {
     font-size: 56px;
     font-weight: 700 ;
-    margin: -3px 0;
+   
+    margin:  0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+    
 }
 
 .social-media a {
@@ -219,4 +250,177 @@ max-width: 900px;
         transform:scale(1);
         opacity: 1;
     }
+}
+
+
+
+/* Contact */
+
+
+.social-contact a {
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    font-size: 60px;
+    color: #eebbc3;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 0 100px 0 100px;
+           
+
+
+}
+
+
+.social-contact {
+
+margin: 20px auto 20px auto;
+           
+
+
+}
+
+
+.social-contact span {
+
+font-size: 25px;
+
+display: inline-block;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+               
+    
+}
+
+
+
+.social-contact a:hover{
+    background-color: #eebbc3;
+    color:#232946;
+    box-shadow: 0 0 20px #eebbc3;
+    border: 2px solid #eebbc3 ;
+    border-radius: 50%;
+
+
+}
+
+
+
+.section-contact h3{
+    
+    font-size: 32px;
+    margin: 20px auto auto auto;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.section-contact h3:nth-last-of-type(2){
+    margin-bottom: 30px;
+   
+}
+
+
+
+/* form */
+.formulario-contact{
+    width: 650px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: #fffffe;
+    border-radius: 10px;
+    border: solid #232946 2px;
+    color: #232946;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.span-form{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:  #232946;
+    font-weight: 800;
+
+
+}
+
+.botonform{
+    background-color: #eebbc3 !important;
+    margin: 20px;
+    color:#232946;
+    
+}
+
+.text-formulario{
+    margin: 8px;
+    border: solid 1.5px #eebbc3;
+    border-radius: 5px;
+}
+
+
+/* SKILL */
+
+.section-skill h2{
+    margin-bottom: 80px;
+
+}
+
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 20px
+}
+
+.skill-container .skill-box{
+    flex: 1 1 30rem;
+    background: #121629;
+    
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #121629;
+    transition: .5s ease;
+}
+
+
+.skill-container .skill-box:hover{
+   border-color: #eebbc3;
+   transform: scale(1.02);
+}
+
+
+
+
+.skill-box i{
+font-size: 7rem;
+color: #eebbc3;
+
+}
+
+.skill-box h3{
+    font-size: 2.2rem;
+   
+}
+
+.skill-box p{
+    font-size: 1.2rem;
+    margin: 1rem 0 3rem ;
+   
 }
