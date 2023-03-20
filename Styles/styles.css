@@ -1,3 +1,30 @@
+/* Media Queris */
+
+@media (min-width:2554px){
+
+    .skill-box{
+        gap: 32px;
+        margin: 40px;
+        
+    }
+
+
+}
+
+
+@media (max-width:1024px){
+
+    .section-home{
+
+       flex-direction: column;
+       
+    
+    }
+    
+
+}
+
+
 /* Estilos generales */
 *{
     margin: 0;
@@ -52,8 +79,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
     margin-bottom: 100px;
+    padding-top: 50px;
 
 }
 
@@ -277,26 +304,36 @@ max-width: 900px;
 /* Contact */
 
 
-.social-contact a {
+.social-contact a{
 
     display: inline-flex;
-
     justify-content: center;
     align-items: center;
     width: 70px;
     height: 70px;
-    background: transparent;
     font-size: 60px;
     color: #eebbc3;
     text-decoration: none;
     margin: 30px 15px 30px 0;
     opacity: 0;
-    animation: slideLeft 1s ease forwards;
+    animation: slideBottom 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    margin: 0 100px 0 100px;
-           
+   
+        
 
+}
 
+.primer-contact{
+    display: inline-flex;
+    border: solid 2px #eebbc3;
+    background-color: #121629;
+    border-radius: 28px;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    margin: 30px;
+    width: 450px;
+    transition: .4s ease;
 }
 
 
@@ -304,9 +341,8 @@ max-width: 900px;
 
 margin: 20px auto 20px auto;
            
-
-
 }
+
 
 
 .social-contact span {
@@ -316,21 +352,31 @@ display: inline-block;
 text-align: center;
 justify-content: center;
 align-items: center;
-
-
-               
+animation: slideBottom 1s ease forwards;
+animation-delay: calc(.2s * var(--i));
+             
     
 }
 
 
-
-.social-contact a:hover{
-    background-color: #eebbc3;
-    color:#232946;
+.primer-contact:hover{
+   
+    color:#eebbc3;
     box-shadow: 0 0 20px #eebbc3;
     border: 2px solid #eebbc3 ;
-    border-radius: 50%;
+    transform: scale(1.1);
 
+}
+
+.primer-contact:hover a {
+
+    
+    background: #eebbc3;
+    border: 2px solid #eebbc3 ;
+    border-radius: 50%;
+    color: #232946;
+    
+           
 
 }
 
@@ -356,12 +402,13 @@ align-items: center;
 /* form */
 .formulario-contact{
     width: 650px;
-    height: 400px;
+    height: 480px;
     margin: 20px auto;
-    background-color: #fffffe;
+    padding: 25px;
+    background: #121629;
     border-radius: 10px;
     border: solid #232946 2px;
-    color: #232946;
+    color: #121629;
     font-size: 20px;
     font-weight: 700;
 }
@@ -370,7 +417,7 @@ align-items: center;
     display: flex;
     text-align: center;
     justify-content: center;
-    color:  #232946;
+    color:  #ffffff;
     font-weight: 800;
 
 
@@ -385,21 +432,19 @@ align-items: center;
 
 .text-formulario{
     margin: 8px;
-    border: solid 1.5px #eebbc3;
+    color: #fffffe;
     border-radius: 5px;
+    border: solid 1px #eebbc3;
 }
+
+
 
 
 
 .formulario-contact textarea{
     resize: none;
+   
 }
-
-
-
-
-
-
 
 
 
@@ -435,7 +480,7 @@ align-items: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
-    margin: 20px
+    margin: 30px
 }
 
 .skill-container .skill-box{
@@ -568,3 +613,8 @@ transform:translateY(0);
     font-size: 1rem;
     color: #121629;
 }
+
+
+
+
+
