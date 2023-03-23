@@ -195,6 +195,7 @@ body{
     align-items: center;
    z-index: 100; 
    border: solid #eebbc3 1px;
+   border-top: none;
    border-radius: 5px;
  
   
@@ -732,6 +733,7 @@ transform:translateY(0);
 
 .proyect-layers h4{
     font-size: 2rem;
+    color:#121629
     
 }
 
